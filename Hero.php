@@ -10,7 +10,7 @@ class Hero extends Character {
     }
 
     public function getSkill(){
-
+        return $this->$skill;
     }
 
 

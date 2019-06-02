@@ -1,11 +1,22 @@
-/* .enemy {
-    img {
-        right: 15vw;
-    }
+.hero img,
+.beast img {
+    display: block;
+    margin: auto;
 }
 
-.hero {
-    img {
-        left: 15vw;
-    }
-} */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

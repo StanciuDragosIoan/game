@@ -23,10 +23,18 @@ class Character {
         }
     }
 
+    public function __set($property, $value){
+        if(property_exists($this, $property)){
+            $this->$property = $value;
+        }
+        return $this;
+    }
     
 }
 
-class CharacterFactory {
-
+// class CharacterFactory {
+//     public static function create($health, $strength, $defence, $speed, $luck){
+//         return new Character($health, $strength, $defence, $speed, $luck);
+//     }
     
-}
+// }
